@@ -1,0 +1,49 @@
+{
+    "openapi": "3.1.0",
+    "info": {
+        "title": "llm-api",
+        "version": "1.0"
+    },
+    "paths": {
+        "/ping": {
+            "get": {
+                "tags": [
+                    "status"
+                ],
+                "summary": "Status Ping",
+                "description": "Ping the Api",
+                "operationId": "status_ping_v1_ping_get",
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/health": {
+            "get": {
+                "tags": [
+                    "status"
+                ],
+                "summary": "Status Health",
+                "description": "Check the health of the Api",
+                "operationId": "status_health_v1_health_get",
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

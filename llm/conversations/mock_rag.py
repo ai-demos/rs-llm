@@ -13,7 +13,7 @@ def get_pdf_rag_conversation(
     conversation_id: Optional[str] = None,
     debug_mode: bool = False,
 ) -> Conversation:
-    """Get a RAG conversation with the PDF knowledge base"""
+    """Get a RAG conversation for mocking backend calls"""
 
     return Conversation(
         id=conversation_id,

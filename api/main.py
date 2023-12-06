@@ -3,6 +3,7 @@ from starlette.middleware.cors import CORSMiddleware
 
 from api.settings import api_settings
 from api.routes.v1_router import v1_router
+from api.wip.wip_router import wip_router
 
 
 def create_app() -> FastAPI:
@@ -23,6 +24,8 @@ def create_app() -> FastAPI:
 
     # Add v1 router
     app.include_router(v1_router)
+    # Add wip router
+    app.include_router(wip_router)
 
     # Add Middlewares
     app.add_middleware(

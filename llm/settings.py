@@ -7,7 +7,7 @@ class LLMSettings(BaseSettings):
     Reference: https://pydantic-docs.helpmanual.io/usage/settings/
     """
 
-    gpt_4: str = "gpt-4"
+    gpt_4: str = "gpt-4-1106-preview"
     gpt_3_5: str = "gpt-3.5-turbo-16k"
     embedding_model: str = "text-embedding-ada-002"
     default_max_tokens: int = 1024
