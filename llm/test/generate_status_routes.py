@@ -40,7 +40,7 @@ conversation = Conversation(
     agents=[file_agent],
     show_function_calls=True,
     function_call_limit=5,
-    debug_mode=True,
+    # debug_mode=True,
 )
 
 conversation.print_response(f"Router Name: {status_router_name}\n\n<OpenApi Specification>\n{status_routes_spec}\n<OpenApi Specification>", stream=False)
